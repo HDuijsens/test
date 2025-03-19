@@ -11,22 +11,13 @@ body {
 }
 
 h1 {
-    color: white; /* Make text readable on dark backgrounds */
+    color: rgb(255, 253, 253); /* Make text readable on dark backgrounds */
     text-align: center; /* Center the text horizontally */
-    padding-top: 30%; /* Move the text down */
+    padding-top: 10%; /* Move the text down */
     margin-bottom: 10px;  /* Add space below the heading */
 }
 
-/* Overlay layer */
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); /* Zwarte overlay met 10% transparantie */
-}
+
 
 
 
@@ -36,10 +27,13 @@ body::after {
 }
 
 .container img {
-    width: 700px;  /* Set the width for both images */
+    width: 900px;  /* Set the width for both images */
     height: auto;  /* Maintain aspect ratio */
     margin-bottom: 20px;  /* Add space between the two images */
 }
-
+/* style.css */
+#myChart {
+    background-color: rgb(220, 220, 235);  /* Set background color for the canvas */
+}
 
 
