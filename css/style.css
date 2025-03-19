@@ -1,0 +1,45 @@
+/* style.css */
+
+body {
+    background-image: url('../images/landschap.jpg'); /* Go up one folder to access images */
+    background-size: cover;      /* Ensure the background covers the whole screen */
+    background-position: center; /* Center the background */
+    background-attachment: fixed; /* Keep background fixed when scrolling */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+
+}
+
+h1 {
+    color: white; /* Make text readable on dark backgrounds */
+    text-align: center; /* Center the text horizontally */
+    padding-top: 30%; /* Move the text down */
+    margin-bottom: 10px;  /* Add space below the heading */
+}
+
+/* Overlay layer */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Zwarte overlay met 10% transparantie */
+}
+
+
+
+.container {
+    text-align: center;  /* Center-align the content */
+    margin: 10px;
+}
+
+.container img {
+    width: 700px;  /* Set the width for both images */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px;  /* Add space between the two images */
+}
+
+
+
