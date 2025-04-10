@@ -1,5 +1,4 @@
 /* style.css */
-
 body {
     background-image: url('../images/landschap.jpg'); /* Go up one folder to access images */
     background-size: cover;      /* Ensure the background covers the whole screen */
@@ -7,11 +6,19 @@ body {
     background-attachment: fixed; /* Keep background fixed when scrolling */
     margin: 0; /* Remove default margin */
     height: 100vh; /* Full viewport height */
+  
 
 }
 
+.bar {
+    fill: rgb(30, 255, 0);
+  }
+
+.bar:hover {
+    fill: orange;
+  }
 h1 {
-    color: rgb(255, 253, 253); /* Make text readable on dark backgrounds */
+    color: rgb(255, 255, 255); /* Make text readable on dark backgrounds */
     text-align: center; /* Center the text horizontally */
     padding-top: 10%; /* Move the text down */
     margin-bottom: 10px;  /* Add space below the heading */
@@ -37,3 +44,45 @@ h1 {
 }
 
 
+div.speciaal { background: green; }
+div.speciaal:hover { background: red; }
+/* als je hovert over de div met de class speciaal verandert deze naar rood*/
+
+/* to set the border: */
+
+
+
+
+  body {
+    background-color: lightyellow;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: rgb(14, 13, 14); /* Make sure axis lines are visible */
+    stroke-width: 2px;  /* Axis path thickness */
+  }
+  
+  .axis text {
+    font-size: 20px;
+    fill: rgb(12, 12, 12);
+    text-anchor: middle;
+  }
+
+  svg {
+    display: block; /* Make the SVG block-level element */
+    margin: auto; /* Center horizontally */
+  }
+  .tooltip {
+    position: absolute;
+    visibility: hidden;  /* Initially hidden */
+    background: rgba(0, 0, 0, 0.7);  /* Dark background */
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    pointer-events: none;  /* Prevent it from blocking mouse events */
+  }
+  
